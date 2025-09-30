@@ -1,8 +1,11 @@
-
-def print_hi(name):
-    print(f'Hi, {name}')
-
+from Los import Los
+from Loteria import Loteria
 
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    Lotto = Loteria()
+    Lotto.dodaj_losy(Los(100))
+    Lotto.dodaj_losy(Los(200))
+    Lotto.dodaj_losy(Los(300))
 
+    Lotto.losuj()
+    Lotto.zwyciezcy()
